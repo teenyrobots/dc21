@@ -1,11 +1,13 @@
 /* Styles for digital comics 2020 testing grounds */
 
-@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@100;400;700&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;700&display=swap');
+
 
 body {
   font-family: Roboto;
-    background-color: #383e56;
-    color: white;
+    background-color: white;
+    color: #383e56;
 }
 
 h1 {
@@ -36,13 +38,13 @@ h1 {
 }
 
 a:link {
-    color: #eedad1;
+    color: #f69e7b;
     padding: .25rem;
     text-decoration: underline dotted #f69e7b;
 }
 
 a:visited {
-    color: #f69e7b;
+    color: #d4b5b0;
 }
 
 a:hover, a:active {

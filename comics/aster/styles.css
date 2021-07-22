@@ -1,0 +1,42 @@
+/* styles for my css hw */
+
+body {
+  background-color: white;
+  font-family: fantasy, sans-serif;
+  color: #C12614;
+}
+
+h1 {
+  font-size: 4rem;
+  color: #C12614;
+}
+
+.header {
+  text-align: center;
+}
+
+p {
+  font-size: 2rem;
+}
+
+
+.mainContainer {
+  width: 100%;
+  max-width: 500px;
+  display: block;
+  margin: auto;
+  position: relative;
+  /* padding: 1rem; */
+}
+
+.clicker {
+  position: absolute;
+  width: 20%;
+  max-width: 100px;
+  left: 45%;
+  top: 40%;
+}
+
+.clicker img {
+  width: 100%;
+}

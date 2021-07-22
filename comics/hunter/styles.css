@@ -1,0 +1,64 @@
+/* styles for note 2 self hotel project2 */
+
+@font-face{
+      font-family:"Hunterscrawl1";
+      src: url("assets/Hunterscrawl1-Regular lg.otf");
+}
+
+body {
+    background-color: dimgray;
+    color: white;
+    background-image: url("assets/hellomemoirtestbannerwebc.jpg");
+    /* background-size: tile; */
+    font-family: Hunterscrawl1, sans-serif;
+    margin: 0;
+}
+
+p{
+    font-size: 1rem;
+}
+
+.mainContainer {
+    background-color: black;
+    width: 100%;
+    max-width: 1000px;
+    display: block;
+    margin: 1% auto;
+    padding: 5rem;
+}
+
+.headerImg {
+    width: 100%;
+    background-color: black;
+    padding: 1rem;
+    margin: 0;
+
+
+
+
+  }
+.footercontainer {
+  background-color: orange;
+  width: 100%;
+  display: block;
+  padding: 10rem;
+  margin: 0;
+  box-sizing: border-box;
+}
+.theartofjmhunterbanner {
+    display: block;
+    margin:  auto;
+    width: 100%;
+
+
+}
+
+.imageTileparent {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.firstrowpanels {
+    margin: 1rem;
+}

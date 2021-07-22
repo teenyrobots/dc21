@@ -1,0 +1,68 @@
+/* syles for chapter selecting page */
+
+@font-face {
+  font-family: "Chenfont";
+  src: url("Chenfont.otf");
+}
+
+body {
+  background-color: dimgray;
+  color: white;
+  background-image: url("assets/bg.jpg");
+  background-size: cover;
+  background-attachment: fixed;
+  font-family: Chenfont, sans-serif;
+}
+
+p {
+  font-size: 2rem;
+}
+
+.mainContainer {
+  background-color: #9BC4C5;
+  width: 100%;
+  max-width: 1000px;
+  display: block;
+  margin: 10rem auto;
+  padding: 1rem;
+}
+
+.linkTiles {
+  position: relative;
+  margin: 1rem;
+}
+
+.linkText {
+  position: absolute;
+  left: 8rem;
+  bottom: 1rem;
+}
+
+.headerImg {
+  width: 100%;
+  opacity: .8;
+  background-color: #E8F0F0;
+  padding: 1rem;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 100;
+}
+
+.waterfall {
+  display: block;
+  margin: auto;
+}
+
+.linkTileParent {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+img {
+  width: 100%;
+  max-width: 500px;
+  display: block;
+  margin: auto;
+}

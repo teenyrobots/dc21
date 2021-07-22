@@ -1,0 +1,26 @@
+body {
+  background-color: black;
+}
+
+.startAgain {
+ position: absolute;
+ height: 100vh;
+ max-height: 165px;
+ right: -567vh;
+ top: 40vh;
+}
+
+.comic {
+ height: 100vh;
+ margin-left: auto;
+ position: relative;
+ z-index:-1;
+}
+
+.comic img {
+ height: 100vh;
+}
+
+.overlay {
+ position: absolute;
+}

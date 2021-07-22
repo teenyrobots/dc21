@@ -1,0 +1,118 @@
+/* styles for kristen */
+
+@font-face {
+  font-family: "Kzfont071421";
+  src: url(Kzfont071421-Regular.otf);
+}
+
+body {
+  background-color: black;
+  color: lightpink;
+  font-family: Kzfont071421, sans-serif;
+}
+
+img {
+  width: 100%;
+  max-width: 1000px;
+  display: block;
+  margin: 0;
+}
+
+
+.mainContainer {
+  position: relative;
+  display: block;
+  margin: auto;
+}
+
+.mainComic {
+  display: block;
+  margin: auto;
+}
+
+.clickable {
+  position: absolute;
+}
+
+#page1Click {
+  top: 205px;
+  right: 300px;
+}
+
+#page2Click {
+  top: 25px;
+  right: 300px;
+}
+
+#page3Click {
+  top: 55px;
+  right: 60px;
+}
+
+#page4Click {
+  top: 120px;
+  right: 50px;
+}
+
+#page5Click {
+  top: 175px;
+  right: 10px;
+}
+
+#page6Click {
+  top: 100px;
+  right: 20px;
+}
+
+#page7Click {
+  top: 190px;
+  right: 100px;
+}
+
+#page8Click {
+  top: 410px;
+  right: 40px;
+}
+
+#page9Click {
+  top: 170px;
+  right: 70px;
+}
+
+#page10Click {
+  top: 390px;
+  right: 500px;
+}
+
+#page11Click {
+  top: 250px;
+  right: 600px;
+}
+
+#page12Click {
+  top: 150px;
+  right: 550px;
+}
+
+#page13Click {
+  top: 350px;
+  right: 730px;
+}
+
+#page14Click {
+  top: 135px;
+  right: 830px;
+}
+
+#page15Click {
+  top: 175px;
+  right: 730px;
+}
+
+#mc1 {
+  width: 1000px
+}
+
+#jumpto2 {
+
+}

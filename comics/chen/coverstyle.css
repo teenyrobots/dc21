@@ -1,0 +1,24 @@
+@font-face {
+  font-family: "Chenfont";
+  src: url("Chenfont.otf");
+}
+
+img {
+  background-color: #9BC4C5;
+  width: 28%;
+  max-width: 1000px;
+  height: auto;
+  display: block;
+  margin: 10rem auto;
+  padding: 1rem;
+}
+
+p {
+  font-size: 2rem;
+}
+
+.linkCover {
+  position: absolute;
+  left: 50rem;
+  bottom: 1rem;
+}

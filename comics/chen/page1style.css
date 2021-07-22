@@ -1,0 +1,46 @@
+/* styles for my css */
+
+body {
+  background-color: #ccdedf;
+  color: #9fbabc;
+}
+
+img {
+  width: 100%;
+  max-width: 500px;
+  display: block;
+  margin: auto;
+}
+
+h1 {
+  color: rgba(105,135,137,.9);
+  text-align: center;
+}
+
+a:link {
+  color: #5b8192;
+}
+
+a:visited {
+  color: #798388;
+}
+
+a:hover {
+  background-color: #93b8ba;
+  color: white;
+  text-decoration: none;
+}
+
+a:active {
+  background-color: #e5ecec;
+  color: white;
+  text-decoration: line-through;
+}
+
+.link {
+ text-align: center;
+}
+
+.changeImage {
+  cursor: pointer;
+}

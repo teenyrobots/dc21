@@ -1,0 +1,66 @@
+body {
+  background-color: rgb(255, 51, 153, 1);
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.centerColumn {
+  width: 250px;
+  display: block;
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+h1 {
+  font-size: 30pt;
+  font-style: italic;
+  font-weight: lighter;
+  margin-bottom: 0;
+}
+
+.centerColumn p {
+  display: block;
+  margin-top: 0;
+  margin-bottom: 5px;
+  font-size: 12pt;
+  color: rgb(1, 249, 255, 1);
+}
+
+.hornyWall {
+  display: flex;
+  justify-content: space-around;
+  font-size: 22pt;
+  margin-top: 0;
+}
+
+/* comic page styles */
+
+.comicPage {
+  min-height: 100vh;
+  display: flex;
+  flex-flow: column;
+  justify-content: space-between;
+}
+
+.comicBlock {
+  max-width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.triangles {
+  max-width: 10vw;
+  opacity: 0.5;
+}
+
+.triangles:hover {
+  opacity: 1;
+}
+
+.triangles:active {
+  opacity: 1;
+}

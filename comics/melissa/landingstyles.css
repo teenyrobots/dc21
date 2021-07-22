@@ -1,0 +1,33 @@
+/* Styles for the landing page of the project */
+
+body {
+  background-image: url("assets/spacebg.jpg");
+  background-color: black;
+  background-position: center;
+  background-repeat: repeat;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+
+
+.MiddleFlexBox {
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 4rem;
+  padding: 1rem;
+  width: 30rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+
+.EnterText {
+  text-align: center;
+  color: white;
+  font-size: 2rem;
+  margin: 1rem;
+  padding: 0;
+  display: block;
+}

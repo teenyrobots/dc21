@@ -60,16 +60,16 @@ $(document).ready(function(){
   });
 
   $("#greenAdventure").click(function(){
-    $(this).attr("src", "assets/GreenAdventure.jpg");
+    $(this).attr("src", "assets/GreenAdventure-new.jpg");
 
   });
 
   $("#pinkAdventure").click(function(){
-    $(this).attr("src", "assets/PinkAdventure.jpg");
+    $(this).attr("src", "assets/PinkAdventure-new.jpg");
   });
 
   $("#blueAdventure").click(function(){
-    $(this).attr("src", "assets/BlueAdventure.jpg");
+    $(this).attr("src", "assets/BlueAdventure-new.jpg");
   });
 
 

@@ -5,9 +5,37 @@ $(document).ready(function(){
 // $("#item").hide();
 // $("#item").show();
     let cycling = 1;
+    let classicStatic = document.createElement('audio');
+    classicStatic.setAttribute('src', 'assets/SOUND/classicStatic.mp3');
+    let classicStaticTuningRadio = document.createElement('audio');
+    classicStaticTuningRadio.setAttribute('src', 'assets/SOUND/classicStaticTuningRadio.mp3');
+    let diagnosticBeeps = document.createElement('audio');
+    diagnosticBeeps.setAttribute('src', 'assets/SOUND/diagnosticBeeps.mp3');
+    let ding = document.createElement('audio');
+    ding.setAttribute('src', 'assets/SOUND/Ding.mp3');
+    let increasingStatic = document.createElement('audio');
+    increasingStatic.setAttribute('src', 'assets/SOUND/IncreasingStatic.mp3');
+    let scaryBackgroundAudio = document.createElement('audio');
+    scaryBackgroundAudio.setAttribute('src', 'assets/SOUND/scaryBackgroundAudio.mp3');
+    let shortGlitch1 = document.createElement('audio');
+    shortGlitch1.setAttribute('src', 'assets/SOUND/shortGlitch1.mp3');
+    let shortGlitch2 = document.createElement('audio');
+    shortGlitch2.setAttribute('src', 'assets/SOUND/shortGlitch2.mp3');
+    let stutteringPowerDown = document.createElement('audio');
+    stutteringPowerDown.setAttribute('src', 'assets/SOUND/StutteringPowerDown.mp3');
+    let stutteringPowerDown2 = document.createElement('audio');
+    stutteringPowerDown2.setAttribute('src', 'assets/SOUND/StutteringPowerDown2.mp3');
+    let speechDiagnostics = document.createElement('audio');
+    speechDiagnostics.setAttribute('src', 'assets/SOUND/speechDiagnostics.mp3');
+    let speechSolarPanels = document.createElement('audio');
+    speechSolarPanels.setAttribute('src', 'assets/SOUND/speechSolarPanels.mp3');
+    let speechUnknown = document.createElement('audio');
+    speechUnknown.setAttribute('src', 'assets/SOUND/speechUnknown.mp3');
+
 
 //if cycling=1 do the thing, if not DON'T DO IT
     $(".FirstTransition").click(function(){
+      scaryBackgroundAudio.play();
       if (cycling === 1) {
         console.log("click for first transition");
         console.log("cycling is "+cycling);
@@ -17,7 +45,6 @@ $(document).ready(function(){
         $("#FirstTransition").addClass("BaseContent");
         var this2 = $(this);
         this2.attr("src", "assets/"+cycling+".gif"); //changed thiss to 2.gif
-  // apparently $this doesn't work inside the Timeout function, so we assign a variable to hold it beforehand.
           setTimeout(function(){
             cycling += 1;
             //cycling is 3
@@ -37,6 +64,7 @@ $(document).ready(function(){
 
   $("#LightButton1").click(function(){
     cycling += 1;
+    ding.play();
 //cycling should be 4
     console.log(cycling+"light button 1 has been clicked");
     $(this).addClass("HiddenFirst"); //hide light button
@@ -57,25 +85,29 @@ $(document).ready(function(){
 
   $("#SoundButton1").click(function(){
     cycling += 1;
-//cycling should be 6
-    console.log(cycling+"sound button 1 has been clicked");
+    speechUnknown.play();
     $(this).addClass("HiddenFirst"); //hide button that was just clicked
-    $(".BaseContent").attr("src", "assets/"+cycling+".gif"); //Gif 6 "let's see if we can do something..." and zoom out
-    var this4 = $(".BaseContent");
+//cycling should be 6
     setTimeout(function(){
-      cycling += 1;
-      console.log("cycling is "+cycling);
-      //cycling is 7
-      console.log("first sound button timeout function has been called");
-      this4.attr("src", "assets/"+cycling+".gif"); //Gif 7
-      $("#LightButton2").removeClass("HiddenFirst"); //unhide light button again
-      $("#LightButton2").addClass("ButtonOverlay"); //place light button again
-      console.log("6500 milliseconds should have passed");
-    }, 6500);
+      console.log(cycling+"sound button 1 has been clicked");
+      $(".BaseContent").attr("src", "assets/"+cycling+".gif"); //Gif 6 "let's see if we can do something..." and zoom out
+      var this4 = $(".BaseContent");
+      setTimeout(function(){
+        cycling += 1;
+        console.log("cycling is "+cycling);
+        //cycling is 7
+        console.log("first sound button timeout function has been called");
+        this4.attr("src", "assets/"+cycling+".gif"); //Gif 7
+        $("#LightButton2").removeClass("HiddenFirst"); //unhide light button again
+        $("#LightButton2").addClass("ButtonOverlay"); //place light button again
+        console.log("4500 milliseconds should have passed");
+      }, 4500);
+    }, 2400);
   });
 
   $("#LightButton2").click(function(){
     cycling += 1;
+    ding.play();
 //cycling should be 8
     console.log(cycling+"light button2 has been clicked");
     $(this).addClass("HiddenFirst"); //hide button that was just clicked
@@ -89,29 +121,41 @@ $(document).ready(function(){
       this5.attr("src", "assets/"+cycling+".gif"); //show gif 9 "what's wrong with the oxygen garden" forever loop
       $("#SoundButton2").removeClass("HiddenFirst"); //unhide light button again
       $("#SoundButton2").addClass("ButtonOverlay"); //place light button again
-      console.log("7000 milliseconds should have passed");
-    }, 7000);
+      console.log("5500 milliseconds should have passed");
+    }, 5500);
   });
+
 
   $("#SoundButton2").click(function(){
     cycling += 1;
+    speechSolarPanels.play();
 //cycling should be 10
 //I DON'T THINK THIS PART EVEN NEEDS A TIMEOUT FUNCTION BUT I'M TIRED RIGHT NOW
-    console.log(cycling+"sound button 2 has been clicked");
-    $(this).addClass("HiddenFirst"); //hide button that was just clicked
-    $(".BaseContent").attr("src", "assets/"+cycling+".gif"); //Show gif 10 "non rsesponsive? Do a diagnostic" forever loop
     setTimeout(function(){
-      console.log("cycling is "+cycling);
-      //cycling is still 10
-      console.log("sound button 2 timeout function has been called");
-      $("#DiagnosticsButton").removeClass("HiddenFirst"); //unhide DiagnosticsButton
-      $("#DiagnosticsButton").addClass("ButtonOverlay"); //place DiagnosticsButton
-      console.log("3000 milliseconds should have passed");
+      console.log(cycling+"sound button 2 has been clicked");
+      $("#SoundButton2").addClass("HiddenFirst"); //hide button that was just clicked
+      $(".BaseContent").attr("src", "assets/"+cycling+".gif"); //Show gif 10 "non rsesponsive? Do a diagnostic" forever loop
+      setTimeout(function(){
+        console.log("cycling is "+cycling);
+        //cycling is still 10
+        console.log("sound button 2 timeout function has been called");
+        $("#DiagnosticsButton").removeClass("HiddenFirst"); //unhide DiagnosticsButton
+        $("#DiagnosticsButton").addClass("ButtonOverlay"); //place DiagnosticsButton
+        console.log("3000 milliseconds should have passed");
+      }, 2400);
     }, 3000);
   });
 
+// WE'RE GOOD UP TO HERE
+
+
+
+
+
+
   $("#DiagnosticsButton").click(function(){
     cycling += 1; //cycling should be 11
+    diagnosticBeeps.play();
     console.log(cycling+"diagnostic has been clicked");
     var this6 = $(".BaseContent");
     $(this).addClass("HiddenFirst"); //hide button that was just clicked
@@ -126,23 +170,26 @@ $(document).ready(function(){
             this6.attr("src", "assets/"+cycling+".gif"); //show gif 11
             $("#StaticOverlay").removeClass("HiddenFirst"); //unhide Static Overlay
             console.log("nested timeout has occurred");
+            shortGlitch2.play();
             setTimeout(function(){
               $("#StaticOverlay").addClass("HiddenFirst"); //hide Static Overlay
+              shortGlitch1.play();
               console.log("double nested timeout has occurred");
             }, 1000);
-          }, 3000);
+          }, 300);
       console.log("some milliseconds should have passed");
-    }, 4000);
+    }, 2000);
   });
 
   $("#SoundButton3").click(function(){
     cycling += 1;
+    classicStaticTuningRadio.play();
 //this sound plays static
 //cycling should be 12
     console.log(cycling+"sound button 3 has been clicked");
     $(this).addClass("HiddenFirst"); //hide button that was just clicked
-    $(".BaseContent").attr("src", "assets/"+cycling+".gif"); //Show gif 12 "computer are you there?" forever loop
     setTimeout(function(){
+      $(".BaseContent").attr("src", "assets/"+cycling+".gif"); //Show gif 12 "computer are you there?" forever loop
       console.log("sound button 3 timeout function has been called");
       $("#RedAlert").removeClass("HiddenFirst"); //unhide red alert Button
       $("#RedAlert").addClass("ButtonOverlay"); //place RedAlert button
@@ -152,6 +199,8 @@ $(document).ready(function(){
 
   $("#RedAlert").click(function(){
     cycling += 1;
+    shortGlitch1.play();
+    classicStaticTuningRadio.play();
 //this button plays static
 //cycling should be 13
     var this7 = $(".BaseContent");
@@ -161,18 +210,26 @@ $(document).ready(function(){
     setTimeout(function(){
       cycling += 1; //cycling is 14
       this7.attr("src", "assets/"+cycling+".gif"); //show gif 14
-      console.log("red alert timeout function has been called");
-      console.log("5000 milliseconds should have passed");
+      classicStatic.play();
+      console.log("I waited 9000 seconds and played static and cycled the gif to 14");
       setTimeout(function(){
         $("#AlienOverlay").removeClass("HiddenFirst");
-        console.log("nested red alert timeout function has been called");
-        console.log("5000 milliseconds should have passed");
+        increasingStatic.play();
+        console.log("i waited 5000 seconds-alien overlay and increasingstatic plays");
         setTimeout(function(){
-          console.log("double nested red alert timeout function has been called");
-          console.log("5000 milliseconds should have passed");
-          $(location).attr('href','landing.html');
-        }, 9000);
-      }, 9000);
+          stutteringPowerDown.play();
+          $("#ShutDownOverlay").removeClass("HiddenFirst");
+          console.log("I waited 4000 seconds and then played powerdown sound, and shut down overlay");
+        setTimeout(function(){
+          console.log("I waited 10000 seconds on a dark screne");
+          $("#BlackOverlay").removeClass("HiddenFirst");
+          setTimeout(function(){
+            console.log("I waited 10000 seconds and played the shutdown overlay");
+            $(location).attr('href','index.html');
+          }, 8000);
+        }, 1000);
+        }, 4000);
+      }, 5000);
     }, 9000);
   });
 

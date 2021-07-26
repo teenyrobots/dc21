@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<!--it's a comment isn't that neat -->
+<html lang="en">
+
+  <head>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Final Project</title>
+      <link rel="stylesheet" type="text/css" href="styles.css">
+  </head>
+
+<div class="screen">
+  <body>
+
+      <img src="assets/ScreenOverlay.png" alt="screen overlay like a tv" class="ScreenOverlay" id="ScreenOverlay">
+      <img src="assets/StaticOverlay.gif" alt="screen overlay of static" class="ScreenOverlaySecondary HiddenFirst" id="StaticOverlay">
+      <img src="assets/AlienOverlay.gif" alt="screen overlay of alien" class="ScreenOverlayTertiary HiddenFirst" id="AlienOverlay">
+      <img src="assets/DiagnosticsOverlay.gif" alt="screen overlay of hacky text" class="ScreenOverlaySecondary HiddenFirst" id="DiagnosticsOverlay">
+      <img src="assets/ShutDownOverlay.gif" alt="screen overlay of hacky text" class="ScreenOverlayTertiary HiddenFirst" id="ShutDownOverlay">
+      <img src="assets/BlackOverlay.png" alt="screen overlay of hacky text" class="ScreenOverlayTertiary HiddenFirst" id="BlackOverlay">
+
+<!-- should these live in the BaseContentDiv? Or does it not matter because of the script...-->
+<!-- BaseContent images -->
+      <img src="assets/2.gif" alt="screen overlay like a tv" class="HiddenFirst" id="2">
+      <img src="assets/3.gif" alt="screen overlay like a tv" class="HiddenFirst" id="3">
+      <img src="assets/4.gif" alt="screen overlay like a tv" class="HiddenFirst" id="4">
+
+<!-- LightButtonImages -->
+      <!-- <img src="assets/UI/LightButton.gif" alt="screen overlay like a tv" class="HiddenFirst" id="LightButton"> -->
+      <!-- <img src="assets/UI/LightButtonOn.gif" alt="screen overlay like a tv" class="HiddenFirst" id="LightButtonOn"> -->
+      <!-- <img src="assets/UI/LightButtonFlashing.gif" alt="screen overlay like a tv" class="HiddenFirst" id="LightButtonFlashing"> -->
+<!-- OtherImages -->
+
+      <div class="BaseContentDiv">
+          <img src="assets/1.gif" alt="comic panel 1" class="FirstTransition BaseContent" id="FirstTransition">
+          <img src="assets/UI/LightButton.gif" alt="light button" class="HiddenFirst ButtonOverlay" id="LightButton1">
+          <img src="assets/UI/SoundButton.gif" alt="sound button" class="HiddenFirst ButtonOverlay" id="SoundButton1">
+          <img src="assets/UI/LightButton.gif" alt="light button" class="HiddenFirst ButtonOverlay" id="LightButton2">
+          <img src="assets/UI/SoundButton.gif" alt="sound button" class="HiddenFirst ButtonOverlay" id="SoundButton2">
+          <img src="assets/UI/LightButton.gif" alt="light button" class="HiddenFirst ButtonOverlay" id="LightButton3">
+          <img src="assets/UI/SoundButton.gif" alt="sound button" class="HiddenFirst ButtonOverlay" id="SoundButton3">
+          <img src="assets/UI/DiagnosticsButton.gif" alt="diagnostic button" class="HiddenFirst ButtonOverlay" id="DiagnosticsButton">
+          <img src="assets/UI/RedAlert.gif" alt="red alert button" class="HiddenFirst ButtonOverlay" id="RedAlert">
+      </div>
+
+    <script
+      src="https://code.jquery.com/jquery-3.6.0.min.js"
+      integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+      crossorigin="anonymous"></script>
+
+    <script src="script.js"></script>
+  </body>
+</div>
+</html>

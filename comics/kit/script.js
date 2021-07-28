@@ -69,7 +69,7 @@ $(document).ready(function(){
   });
 
   $("#blueAdventure").click(function(){
-    $(this).attr("src", "assets/blueAdventure.gif");
+    $(this).attr("src", "assets/BlueAdventure.gif");
   });
 
 

@@ -40,36 +40,36 @@ $(document).ready(function(){
   });
 
   $(".imgChanger1").hover(function(){
-    $(this).attr("src", "assets/Title1.JPG");
+    $(this).attr("src", "assets/Circle1.JPG");
   });
 
   $(".imgChanger2").hover(function(){
-    $(this).attr("src", "assets/Title2.JPG");
+    $(this).attr("src", "assets/Circle2.JPG");
   });
 
   $(".imgChanger3").hover(function(){
-    $(this).attr("src", "assets/Title3.JPG");
+    $(this).attr("src", "assets/Circle3.JPG");
   });
 
   $(".imgChanger4").hover(function(){
-    $(this).attr("src", "assets/Title4.JPG");
+    $(this).attr("src", "assets/Circle4.JPG");
   });
 
   $(".imgChanger5").hover(function(){
-    $(this).attr("src", "assets/Title5.JPG");
+    $(this).attr("src", "assets/Circle5.JPG");
   });
 
   $("#greenAdventure").click(function(){
-    $(this).attr("src", "assets/GreenAdventure-new.jpg");
+    $(this).attr("src", "assets/GreenAdventure.gif");
 
   });
 
   $("#pinkAdventure").click(function(){
-    $(this).attr("src", "assets/PinkAdventure-new.jpg");
+    $(this).attr("src", "assets/PinkAdventure.gif");
   });
 
   $("#blueAdventure").click(function(){
-    $(this).attr("src", "assets/BlueAdventure-new.jpg");
+    $(this).attr("src", "assets/blueAdventure.gif");
   });
 
 

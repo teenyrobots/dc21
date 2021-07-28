@@ -9,7 +9,7 @@ body {
     background-color: dimgray;
     color: white;
     background-image: url("assets/hellomemoirtestbannerwebc.jpg");
-    /* background-size: tile; */
+    background-size: tile;
     font-family: Hunterscrawl1, sans-serif;
     margin: 0;
 }
@@ -21,29 +21,32 @@ p{
 .mainContainer {
     background-color: black;
     width: 100%;
-    max-width: 1000px;
+    max-width: 1100px;
     display: block;
     margin: 1% auto;
     padding: 5rem;
+
+
 }
 
 .headerImg {
     width: 100%;
     background-color: black;
-    padding: 1rem;
-    margin: 0;
+    padding: 1rem 0;
 
 
 
 
   }
 .footercontainer {
-  background-color: orange;
-  width: 100%;
+  background-color: black;
+  max-width: 115%;
   display: block;
-  padding: 10rem;
-  margin: 0;
-  box-sizing: border-box;
+  margin: 1% auto;
+  padding: 3rem;
+  text-align: center;
+
+
 }
 .theartofjmhunterbanner {
     display: block;
@@ -62,3 +65,16 @@ p{
 .firstrowpanels {
     margin: 1rem;
 }
+
+.specialBorder {
+    border: red solid 1rem;
+
+
+
+}
+
+.dancing {
+    margin:1rem auto;
+    max-width: 600px;
+    display: block;
+  }

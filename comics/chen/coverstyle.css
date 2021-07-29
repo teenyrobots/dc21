@@ -1,6 +1,11 @@
+
 @font-face {
   font-family: "Chenfont";
   src: url("Chenfont.otf");
+}
+
+body {
+  font-family: Chenfont, sans-serif;
 }
 
 img {
@@ -11,14 +16,17 @@ img {
   display: block;
   margin: 10rem auto;
   padding: 1rem;
+  font-family: Chenfont, sans-serif;
 }
 
 p {
   font-size: 2rem;
+  font-family: Chenfont, sans-serif;
 }
 
 .linkCover {
   position: absolute;
   left: 50rem;
   bottom: 1rem;
+  font-family: Chenfont, sans-serif;
 }

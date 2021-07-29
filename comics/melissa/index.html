@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<!--it's a comment isn't that neat -->
+
 <html lang="en">
 
   <head>
@@ -10,24 +10,14 @@
   </head>
 
 <body>
-
-
-
   <div class="MiddleFlexBox">
-
-      <img src="assets/UI/Title.png" alt="Title "When the Lights Go Out" a comic by Sawhand">
+      <img src="assets/UI/Title.png" alt="Title When the Lights Go Out a comic by Sawhand">
       <img src="assets/UI/BestUse.png" alt="Turn on audio, turn mobile devices sideways, click/tap screen or buttons to progress">
-
-      <!-- <div class="DumbBlock"> -->
-        <!-- <p> -->
-          <!-- Press play and adjust your computer volume accordingly. -->
-        <!-- </p> -->
-      <!-- </div> -->
       <div class="AudioBlock">
         <p>
           Press play and adjust your computer volume accordingly.
         </p>
-        <audio controls loop class="audiocontrols">
+        <audio controls loop class="audiocontrols" id="audiocontrols">
           <source src="assets/SOUND/ScaryBackgroundAudio.mp3" type="audio/mpeg">
         </audio>
       </div>
@@ -37,17 +27,14 @@
   </div>
 
   <div class="HoldMeCloserTinyFooter">
-          <a href="https://www.sawhand.com" target="_blank">for further works of SAWHAND click here</a>
+    <a href="https://www.sawhand.com" target="_blank">for further works of SAWHAND click here</a>
   </div>
-<!-- If I have time (haha!) I think it would be cool to have sound controls on this page,
-so people can adjust the sound to their liking before starting the whole comic. Would that be persistant? -->
-    <
-      <script
-        src="https://code.jquery.com/jquery-3.6.0.min.js"
-        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
-        crossorigin="anonymous"></script>
 
-      <script src="script.js"></script>
+
+  <script
+    src="https://code.jquery.com/jquery-3.6.0.min.js"
+    integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+  <script src="LandingScript.js"></script>
 </body>
 
 </html>

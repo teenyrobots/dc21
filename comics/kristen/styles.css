@@ -11,13 +11,24 @@ body {
   font-family: Kzfont071421, sans-serif;
 }
 
-img {
+h1 {
+  font-size: 5rem
+}
+
+p {
+  font-size: 4rem
+}
+
+/* img {
   width: 100%;
   max-width: 1000px;
   display: block;
   margin: 0;
-}
+} */
 
+.firstPage {
+  text-align: center;
+}
 
 .mainContainer {
   position: relative;
@@ -34,85 +45,171 @@ img {
   position: absolute;
 }
 
+.jumper {
+  width: 100px;
+  height: 100px;
+  position: absolute;
+}
+
+#splashPageClick {
+  width: 100%;
+  max-width: 1000px;
+}
+
+#splashPageClick img {
+  width: 100%;
+}
+
 #page1Click {
-  top: 205px;
-  right: 300px;
+  top: 245px;
+  left: 970px;
 }
 
 #page2Click {
-  top: 25px;
-  right: 300px;
+  top: 1px;
+  left: 1030px;
 }
 
 #page3Click {
-  top: 55px;
-  right: 60px;
+  top: 20px;
+  left: 1320px;
 }
 
 #page4Click {
-  top: 120px;
-  right: 50px;
+  top: 115px;
+  left: 1720px;
 }
 
 #page5Click {
-  top: 175px;
-  right: 10px;
+  top: 140px;
+  left: 1812px;
 }
 
 #page6Click {
-  top: 100px;
-  right: 20px;
+  top: 120px;
+  left: 2090px;
 }
 
 #page7Click {
-  top: 190px;
-  right: 100px;
+  top: 531px;
+  left: 2370px;
 }
 
 #page8Click {
-  top: 410px;
-  right: 40px;
+  top: 960px;
+  left: 2570px;
 }
 
 #page9Click {
-  top: 170px;
-  right: 70px;
+  top: 918px;
+  left: 2323px;
 }
 
 #page10Click {
-  top: 390px;
-  right: 500px;
+  top: 1020px;
+  left: 1570px;
 }
 
 #page11Click {
-  top: 250px;
-  right: 600px;
+  top: 770px;
+  left: 1240px;
 }
 
 #page12Click {
-  top: 150px;
-  right: 550px;
+  top: 575px;
+  left: 990px;
 }
 
 #page13Click {
-  top: 350px;
-  right: 730px;
+  top: 1020px;
+  left: 799px;
 }
 
 #page14Click {
-  top: 135px;
-  right: 830px;
+  top: 425px;
+  left: 508px;
 }
 
 #page15Click {
-  top: 175px;
-  right: 730px;
+  top: 280px;
+  left: 590px;
 }
 
-#mc1 {
+/* #mc1 {
   width: 1000px
+} */
+
+#jumpto1 {
+  top: 2px;
+  left: 1800px;
 }
 
 #jumpto2 {
+  top: 2px;
+  left: 1500px;
+}
 
+#jumpto3 {
+  top: 2px;
+  left: 1616px;
+}
+
+#jumpto4 {
+  top: 2px;
+  left: 1985px;
+}
+
+#jumpto5 {
+  top: 2px;
+  left: 2428px;
+}
+
+#jumpto6 {
+  top: 2px;
+  left: 2439px;
+}
+
+#jumpto7 {
+  top: 10px;
+  left: 2793px;
+}
+
+#jumpto8 {
+  top: 300px;
+  left: 2930px;
+}
+
+#jumpto9 {
+  top: 425px;
+  left: 2924px;
+}
+
+#jumpto10 {
+  top: 797px;
+  left: 2465px;
+}
+
+#jumpto11 {
+  top: 734px;
+  left: 1934px;
+}
+
+#jumpto12 {
+  top: 720px;
+  left: 1854px;
+}
+
+#jumpto13 {
+  top: 819px;
+  left: 1120px;
+}
+
+#jumpto14 {
+  top: 503px;
+  left: 927px;
+}
+
+#jumpto15 {
+  top: 130px;
+  left: 1050px;
 }

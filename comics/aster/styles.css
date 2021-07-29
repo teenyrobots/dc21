@@ -1,13 +1,18 @@
 /* styles for my css hw */
 
+@font-face {
+  font-family: "ohgods";
+  src: url("Ohgods-Regular.otf");
+}
+
 body {
   background-color: white;
-  font-family: fantasy, sans-serif;
+  font-family: ohgods, sans-serif;
   color: #C12614;
 }
 
 h1 {
-  font-size: 4rem;
+  font-size: 6rem;
   color: #C12614;
 }
 
@@ -17,6 +22,7 @@ h1 {
 
 p {
   font-size: 2rem;
+  text-align: center;
 }
 
 
@@ -39,4 +45,17 @@ p {
 
 .clicker img {
   width: 100%;
+}
+
+a:link{
+  color: #080809;
+}
+
+a:visited{
+  color: #C12614;
+}
+
+a:hover{
+  color: #C2ECF1;
+  text-decoration: line-through;
 }

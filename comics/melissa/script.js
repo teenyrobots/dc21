@@ -1,9 +1,4 @@
-//jquery comment. Script for homework
-
 $(document).ready(function(){
-// $("#item").toggle();
-// $("#item").hide();
-// $("#item").show();
     let cycling = 1;
     let classicStatic = document.createElement('audio');
     classicStatic.setAttribute('src', 'assets/SOUND/classicStatic.mp3');
@@ -15,25 +10,23 @@ $(document).ready(function(){
     ding.setAttribute('src', 'assets/SOUND/Ding.mp3');
     let increasingStatic = document.createElement('audio');
     increasingStatic.setAttribute('src', 'assets/SOUND/IncreasingStatic.mp3');
+
     let scaryBackgroundAudio = document.createElement('audio');
     scaryBackgroundAudio.setAttribute('src', 'assets/SOUND/scaryBackgroundAudio.mp3');
+    scaryBackgroundAudio.volume = 0.7;
+
     let shortGlitch1 = document.createElement('audio');
     shortGlitch1.setAttribute('src', 'assets/SOUND/shortGlitch1.mp3');
     let shortGlitch2 = document.createElement('audio');
     shortGlitch2.setAttribute('src', 'assets/SOUND/shortGlitch2.mp3');
     let stutteringPowerDown = document.createElement('audio');
     stutteringPowerDown.setAttribute('src', 'assets/SOUND/StutteringPowerDown.mp3');
-    let stutteringPowerDown2 = document.createElement('audio');
-    stutteringPowerDown2.setAttribute('src', 'assets/SOUND/StutteringPowerDown2.mp3');
-    let speechDiagnostics = document.createElement('audio');
-    speechDiagnostics.setAttribute('src', 'assets/SOUND/speechDiagnostics.mp3');
     let speechSolarPanels = document.createElement('audio');
     speechSolarPanels.setAttribute('src', 'assets/SOUND/speechSolarPanels.mp3');
     let speechUnknown = document.createElement('audio');
     speechUnknown.setAttribute('src', 'assets/SOUND/speechUnknown.mp3');
 
 
-//if cycling=1 do the thing, if not DON'T DO IT
     $(".FirstTransition").click(function(){
       scaryBackgroundAudio.play();
       if (cycling === 1) {
@@ -76,7 +69,7 @@ $(document).ready(function(){
       console.log("cycling is "+cycling);
       console.log("first light button timeout function has been called");
       //sets this3 to 5.gif and shows sound button
-      this3.attr("src", "assets/"+cycling+".gif"); // gif 5 "what is the status of the oxygen garden" forever loop
+      this3.attr("src", "assets/"+cycling+".gif");
       $("#SoundButton1").removeClass("HiddenFirst");
       $("#SoundButton1").addClass("ButtonOverlay");
       console.log("7000 milliseconds should have passed");
@@ -90,7 +83,7 @@ $(document).ready(function(){
 //cycling should be 6
     setTimeout(function(){
       console.log(cycling+"sound button 1 has been clicked");
-      $(".BaseContent").attr("src", "assets/"+cycling+".gif"); //Gif 6 "let's see if we can do something..." and zoom out
+      $(".BaseContent").attr("src", "assets/"+cycling+".gif");
       var this4 = $(".BaseContent");
       setTimeout(function(){
         cycling += 1;
@@ -130,7 +123,6 @@ $(document).ready(function(){
     cycling += 1;
     speechSolarPanels.play();
 //cycling should be 10
-//I DON'T THINK THIS PART EVEN NEEDS A TIMEOUT FUNCTION BUT I'M TIRED RIGHT NOW
     setTimeout(function(){
       console.log(cycling+"sound button 2 has been clicked");
       $("#SoundButton2").addClass("HiddenFirst"); //hide button that was just clicked
@@ -145,12 +137,6 @@ $(document).ready(function(){
       }, 2400);
     }, 3000);
   });
-
-// WE'RE GOOD UP TO HERE
-
-
-
-
 
 
   $("#DiagnosticsButton").click(function(){
@@ -232,24 +218,6 @@ $(document).ready(function(){
       }, 5000);
     }, 9000);
   });
-
-    // $(".CycledImages").click(function(){
-      // console.log("clickfunction should have done it");
-      // if (cycling < 5){
-        // cycling += 1;
-        // $(this).attr("src", "assets/"+cycling+".gif");
-        // $(this).addClass("BaseContent");
-      // } else {
-        // cycling = 1;
-        // $(this).attr("src", "assets/"+cycling+".gif");
-      // }
-    // });
-
-
-
-    // $(".changeMyClass").click(function(){
-      // $(this).toggleClass("spooky");
-    // });
 
 
 

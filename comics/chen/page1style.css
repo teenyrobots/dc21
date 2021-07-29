@@ -1,8 +1,15 @@
 /* styles for my css */
 
+
+@font-face {
+  font-family: "Chenfont";
+  src: url("Chenfont.otf");
+}
+
 body {
   background-color: #ccdedf;
-  color: #9fbabc;
+  color: blue;
+  font-family: Chenfont;
 }
 
 img {

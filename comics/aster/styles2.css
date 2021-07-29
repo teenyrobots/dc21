@@ -1,26 +1,29 @@
 body {
-  background-color: black;
-}
-
-.startAgain {
- position: absolute;
- height: 100vh;
- max-height: 165px;
- right: -567vh;
- top: 40vh;
+  background-color: #080809;
+  margin: 0;
+  padding: 0;
 }
 
 .comic {
- height: 100vh;
- margin-left: auto;
- position: relative;
- z-index:-1;
+  position: relative;
+ /* height: 100vh; */
+ width: calc(100vh * 8);
 }
 
 .comic img {
- height: 100vh;
+ height: 100%;
 }
 
 .overlay {
  position: absolute;
+ top: 0;
+ left: 0;
+}
+
+.startAgain {
+ position: absolute;
+ height: 10vh;
+ width: auto;
+ right: 50vh;
+ top: 40vh;
 }

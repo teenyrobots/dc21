@@ -67,7 +67,7 @@
                       $(this).attr("src", "assets/n2sbluepanel2.jpg");
                       secondPanel=true;
                     } else {
-                      $(this).attr("src", "assets/jmhunterohhopepanel21webc.jpg");
+                      $(this).attr("src", "assets/jmhunterohhopepanel2webc.jpg");
                       secondPanel = false;
                     }
 

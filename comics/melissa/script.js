@@ -1,30 +1,30 @@
 $(document).ready(function(){
     let cycling = 1;
     let classicStatic = document.createElement('audio');
-    classicStatic.setAttribute('src', 'assets/SOUND/classicStatic.mp3');
+    classicStatic.setAttribute('src', 'assets/SOUND/ClassicStatic.mp3');
     let classicStaticTuningRadio = document.createElement('audio');
-    classicStaticTuningRadio.setAttribute('src', 'assets/SOUND/classicStaticTuningRadio.mp3');
+    classicStaticTuningRadio.setAttribute('src', 'assets/SOUND/ClassicStaticTuningRadio.mp3');
     let diagnosticBeeps = document.createElement('audio');
-    diagnosticBeeps.setAttribute('src', 'assets/SOUND/diagnosticBeeps.mp3');
+    diagnosticBeeps.setAttribute('src', 'assets/SOUND/DiagnosticBeeps.mp3');
     let ding = document.createElement('audio');
     ding.setAttribute('src', 'assets/SOUND/Ding.mp3');
     let increasingStatic = document.createElement('audio');
     increasingStatic.setAttribute('src', 'assets/SOUND/IncreasingStatic.mp3');
 
     let scaryBackgroundAudio = document.createElement('audio');
-    scaryBackgroundAudio.setAttribute('src', 'assets/SOUND/scaryBackgroundAudio.mp3');
+    scaryBackgroundAudio.setAttribute('src', 'assets/SOUND/ScaryBackgroundAudio.mp3');
     scaryBackgroundAudio.volume = 0.7;
 
     let shortGlitch1 = document.createElement('audio');
-    shortGlitch1.setAttribute('src', 'assets/SOUND/shortGlitch1.mp3');
+    shortGlitch1.setAttribute('src', 'assets/SOUND/ShortGlitch1.mp3');
     let shortGlitch2 = document.createElement('audio');
-    shortGlitch2.setAttribute('src', 'assets/SOUND/shortGlitch2.mp3');
+    shortGlitch2.setAttribute('src', 'assets/SOUND/ShortGlitch2.mp3');
     let stutteringPowerDown = document.createElement('audio');
     stutteringPowerDown.setAttribute('src', 'assets/SOUND/StutteringPowerDown.mp3');
     let speechSolarPanels = document.createElement('audio');
-    speechSolarPanels.setAttribute('src', 'assets/SOUND/speechSolarPanels.mp3');
+    speechSolarPanels.setAttribute('src', 'assets/SOUND/SpeechSolarPanels.mp3');
     let speechUnknown = document.createElement('audio');
-    speechUnknown.setAttribute('src', 'assets/SOUND/speechUnknown.mp3');
+    speechUnknown.setAttribute('src', 'assets/SOUND/SpeechUnknown.mp3');
 
 
     $(".FirstTransition").click(function(){
